@@ -1,13 +1,29 @@
 <!DOCTYPE html>
-
 <html lang="en">
-    <head>
-        <link rel="stylesheet" type="text/css" href="pulsebond.css">
-        <meta charset="utf-8" />
-        <title>Pulsebond - Make it pulse, together.</title>
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
-        <script>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pulsebond, all the sport around you">
+    <link rel="shortcut icon" href="assets/ico/favicon_pulsebond.png">
+
+    <title>Pulsebond - Make it pulse, together</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this website -->
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/icomoon.css">
+    <link href="assets/css/animate-custom.css" rel="stylesheet">
+
+
+    
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,500,700' rel='stylesheet' type='text/css'>
+    
+    <script src="assets/js/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
+	<script>
           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
           (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
           m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -15,54 +31,132 @@
 
           ga('create', 'UA-55484066-1', 'auto');
           ga('send', 'pageview');
-        </script>
-    </head>
-    <body>          
-      <div class="navbar">
-        <div class="navbar-inner">
-                <div id="pulsebondimage">
-                    <img src="/images/pulsebond.png" alt="Pulsebond">
-                    <img src="/images/pulsebond_text.png" alt="Pulsebond" id="brand">
-                </div><!--
-            <div id="pulsebondname">
-                    <p>Pulsebond</p>
-                </div> -->
-        </div> <!-- navbar-inner -->
-      </div>
-       <div id="container">
-            <div class="top-content">
-                <h1>Create. Find. Connect.</h1>
-                <p>
-                  Pulsebond is where people change the way we connect through sport.<br>
-                  Create, find and share sport events and activities around you. <br>
-                  You belong here.
-                </p>
-                <!-- Button & relation to DB has been added
-                <br>
-                <br>
-                <p>Registration for Beta version coming soon...</p>
-                -->
+    </script>
+    
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+      <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <!-- <body data-spy="scroll" data-offset="0" data-target="#navbar-main"> -->
+  
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand page-scroll" href="#page-top">
+                 <img src="assets/img/logo.png">
+                   Pulsebond
+                </a>
             </div>
-           <div class="bottom-content">
-               <div id="beta">
-                    <span>Get notified when the Beta's out</span>
-               </div>
-               <div id="content">
-                        <img src="/images/arrow_white.png" alt="arrow">
-                        <input type="email" id="emailInput" name="email" placeholder="your email address" required >
-                        <button type="submit" class="submit" id="btnValidate">keep me posted</button>
-                        <span id="message"></span>                 
-               </div>
-           </div>
-           <!-- NRJ startup ended
-           <div id="banner">
-               <p>
-                 Pulsebond has been selected for the finals of the NRJ startup competition! <br> 
-                 To help us win the contest, go on <a href="http://www.nrj.be/news-nrj/startupnrj.html" target="_blank" style="cursor: pointer">NRJ's website</a> and vote for Pulsebond !
-               </p>     
-            </div>   
-           -->
-       </div> 
-        <script src="app.js"></script>         
-    </body>
+        </div><!-- /.container -->
+    </nav><!-- Navigation -->
+
+  
+  
+		<!-- ==== HEADERWRAP ==== -->
+	    <div id="headerwrap" id="home" name="home">
+			<header class="clearfix">
+	  		 		<p>Make it Pulse, together</p>
+	  		 		<p>The sport around you, wherever you are</p> 
+	  		</header>	    
+	    </div><!-- /headerwrap -->
+
+	    <div id="darkgreywrap">
+	    		<div class="row">
+					<div id="beta" class="col-xs-12 text-center">
+	                    	<span>Get notified when the Beta's out</span>
+				    </div>
+				</div>
+					<div class="row">
+					<div id="emailContent" class="col-lg-12 text-center">
+					  <ul>	
+					   <li>	        
+					        <label class="sr-only" for="emailInput">Your email address</label>
+					        <input type="email" id="emailInput" name="email" placeholder="Your email address" required >
+					   </li>
+					    <li>
+					        <button type="submit" class="submit" id="btnValidate">Keep me posted</button>
+					    </li>
+					    <li>
+					        <span id="message"></span>  
+						</li>
+					  </ul>    
+					</div>
+					</div>
+		</div>		
+
+		<!-- ==== GREYWRAP ==== -->
+		<div id="greywrap">
+			<div class="row">
+				<div class="col-lg-6 callout">
+					<span class="icon icon-users"></span>
+					<h2>Never fall short of people</h2>
+					<p>Sport is just more fun when it's shared. Browse through a curated shortlist of people around you to find your next sport partners, teammates or opponents. </p>
+				</div><!-- col-lg-4 -->
+					
+				<div class="col-lg-6 callout">
+					<span class="icon icon-link"></span>
+					<h2>Never miss a game again</h2>
+					<p>Connect to those with the same sport interest. Always keep updated on their activities so that you don't miss any. </p>
+				</div><!-- col-lg-4 -->	
+
+			</div><!-- row -->
+		</div><!-- greywrap -->
+		
+		<!-- ==== ABOUT ==== -->
+		<div class="container" id="about" name="about">
+			<div class="row white">
+			<br>
+				<h1 class="centered">About us</h1>
+				<hr>
+				
+				<div class="col-lg-6">
+					<p>We’ve played it, we’ve done it, we’ve come to love it as children and now, we embrace it as part of our life. Many years have passed but ultimately the purpose hasn’t changed: sport is first and foremost about having fun. Sharing sport moments enrich our lives in many ways. However, finding people to play with isn’t always a piece of cake.</p>
+				</div><!-- col-lg-6 -->
+				
+				<div class="col-lg-6">
+					<p>Often, too often for us at Pulsebond, we struggled finding people to do sport with. That’s why we decided to do something about it.
+					We are on a mission to connect people locally around the sports that they’re into. We take care of the boring part of sport, you keep the fun. Spread the word: Come out, make it Pulse, together.</p>
+				</div><!-- col-lg-6 -->
+			</div><!-- row -->
+		</div><!-- container -->
+		
+		<!-- ==== SECTION DIVIDER2 -->
+		<section class="section-divider textdivider divider2">
+			<div class="container">
+				<h1>THERE IS SO MUCH MORE AROUND SPORT THAN SWEAT</h1>
+				<hr>
+			</div><!-- container -->
+		</section><!-- section -->
+
+		<div id="footerwrap">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6">
+						<span>Crafted in Belgium, with pride.</span>
+					</div>
+					<div class="col-lg-6">
+						<span>Like us on </span> <a class="icon icon-facebook" href="https://www.facebook.com/pulsebond"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+		
+
+	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/js/navbarscroll.js"></script>
+	<script type="text/javascript" src="assets/js/retina.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="assets/js/smoothscroll.js"></script>
+	<script type="text/javascript" src="assets/js/jquery-func.js"></script>
+  </body>
 </html>
